@@ -1,0 +1,75 @@
+.result-edit.show-edit {
+  border: 1px solid #0271b1;
+  position: relative;
+}
+.result-edit.show-edit .edit-button {
+  display: block;
+  text-transform: uppercase;
+}
+.paging-container {
+  position: relative;
+}
+.paging-container .edit-button {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #0271b1;
+  color: white;
+  z-index: 2;
+  width: 140px;
+  font-size: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.rl-search {
+  font-size: 18px;
+}
+.rl-search.show-edit {
+  border: 1px solid #0271b1;
+  position: relative;
+}
+.rl-search.show-edit .edit-button {
+  display: block;
+  text-transform: uppercase;
+}
+.rl-search a.text-primary {
+  margin-left: 6px;
+  color: #fc6730 !important;
+  font-family: 'Roboto Light';
+}
+.rl-search a.text-primary:hover {
+  font-family: 'Roboto Medium';
+}
+.rl-search .right {
+  font-size: 16px;
+}
+.rl-search .pagination-wrap .pagination .page-item {
+  font-size: 16px;
+}
+.rl-search .pagination-wrap .pagination .page-item span.page-link-searchstudio-js {
+  padding: 0.5rem;
+  font-size: 16px;
+  color: #33465a;
+  border: 0 !important;
+}
+.rl-search .pagination-wrap .pagination .page-item .page-link-searchstudio-js {
+  padding: 0.5rem;
+  color: #fc6730;
+  border: 0 !important;
+}
+.rl-search .pagination-wrap .pagination .page-item .page-link-searchstudio-js:hover {
+  background-color: transparent;
+}
+.rl-search .pagination-wrap .pagination .page-item .page-link-searchstudio-js[disabled='disabled'] {
+  color: #33465a;
+  background-color: transparent;
+  cursor: default;
+  opacity: 0.5;
+}
+.rl-search .pagination-wrap .pagination .page-item .page-link-searchstudio-js[disabled='disabled']:focus {
+  outline: 0;
+  background-color: transparent;
+  cursor: default;
+  box-shadow: 0;
+}

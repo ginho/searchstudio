@@ -1,0 +1,6 @@
+searchstudio.search_page:
+  path: '/searchstudio'
+  defaults:
+    _controller: '\Drupal\searchstudio\Controller\SearchstudioController::searchPage'
+  requirements:
+    _permission: 'access content'
