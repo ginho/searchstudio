@@ -8,7 +8,6 @@ add-styling:
       css/pagination-wrap.css: {}
       css/searchstudio.css: {}
       css/sf-filter.css: {}
-      https://static.searchstax.com/studio-js/v3/css/studio-app.css: { external: true, attributes: { defer: true, async: true } }
 
 add-scripts:
   version: 3.0

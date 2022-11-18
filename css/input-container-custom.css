@@ -63,14 +63,27 @@
   background: none;
 }
 .input-container-custom .sf-header-searchstudio-js .sf-form .form-control-suggest input {
-  width: 100%;
-  height: 64px;
-  padding-left: 30px;
-  padding-right: 225px;
-  font-size: 18px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 2px solid #ebebeb;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid #89191f;
-  border-radius: 80px;
+  padding: 11px 20px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  outline: none;
+  width: 100%;
+  font-size: 1.6rem;
+  height: 46px;
+  background-clip: padding-box;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #282b2c;
 }
 .input-container-custom .sf-header-searchstudio-js .sf-form .form-control-suggest input:focus {
   box-shadow: none;
@@ -149,13 +162,12 @@
   box-shadow: none;
 }
 
-                        .sf-lists-custom {
-                          margin-top: 20px;
-                        }
-
-                        .facet-template-container-custom .pill-container {
-                          display: none;
-                        }
+.sf-lists-custom {
+  margin-top: 20px;
+}
+.facet-template-container-custom .pill-container {
+  display: none;
+}
 .facet-template-container-custom .pill-container .pill {
   border: 1px solid #33475a;
   border-radius: 1.5rem;

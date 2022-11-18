@@ -1,6 +1,5 @@
 
 .theme-container {
-  font-size: 0.812rem;
 }
 h1 {
   font-weight: 700;
@@ -119,20 +118,18 @@ h1 {
 
 @media (min-width: 768px) {
   .search-input-wrapper {
-    width: 50%;
+    width: 70%;
   }
   .facet-container-wrapper {
     display: block;
   }
 }
-</style>
-  <style type="text/css">
-                        .card-searchstudio-js-custom {
-                          position: relative;
-                          padding: 39px 12px 28px 12px;
-                          color: #33475a;
-                          border: none;
-                          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.14902);
+
+.card-searchstudio-js-custom {
+  position: relative;
+  padding: 39px 12px 28px 12px;
+  border: none;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.14902);
                         }
 .card-searchstudio-js-custom.has-thumbnail {
   padding-left: 35%;
@@ -217,15 +214,7 @@ h1 {
   background-position: center center;
 }
 .card-searchstudio-js-custom .card-searchstudio-js-body .card-searchstudio-js-title {
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 0;
-}
-.card-searchstudio-js-custom .card-searchstudio-js-body .card-searchstudio-js-title a {
-  font-family: 'Roboto Condensed',Arial,sans-serif;
-  font-size: 3.2rem;
-  color: #89191F;
-  text-decoration: underline;
+
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -233,6 +222,14 @@ h1 {
   /* number of lines to show */
   -webkit-box-orient: vertical;
   padding: 0;
+  margin-bottom: 0;
+}
+.card-searchstudio-js-custom .card-searchstudio-js-body .card-searchstudio-js-title a {
+  font-family: 'Roboto Condensed',Arial,sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #89191F;
+  text-decoration: underline;
 }
 .card-searchstudio-js-custom .card-searchstudio-js-body .card-searchstudio-js-title a:hover {
   text-decoration: underline;
@@ -252,14 +249,6 @@ h1 {
   width: 100%;
 }
 .card-searchstudio-js-custom .card-searchstudio-js-body .card-searchstudio-js-body .card-searchstudio-js-text span {
-  font-size: 14px;
-  line-height: 21px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  /* number of lines to show */
-  -webkit-box-orient: vertical;
 }
 .card-searchstudio-js-custom .card-searchstudio-js-body .card-searchstudio-js-body .card-searchstudio-js-text span .stretched-link {
   color: #33475a;
@@ -278,11 +267,10 @@ h1 {
 .card-searchstudio-js-custom .card-searchstudio-js-title strong, .card-searchstudio-js-custom .card-searchstudio-js-text strong {
   color: #fc6730;
 }
-</style>
-  <style type="text/css">
-                        .search-feedback-filters-custom {
-                          display: flex;
-                        }
+
+.search-feedback-filters-custom {
+display: flex;
+}
 .search-feedback-filters-custom .sf-filter-info {
   font-size: 18px;
   padding-left: 0;
@@ -302,19 +290,17 @@ h1 {
     min-width: 95px;
   }
 }
-</style>
-  <style type="text/css">
 
-                        #sf-widget-custom {
-                          position: relative;
-                          padding: 0;
-                          margin: 0;
-                          z-index: 99;
-                          height: auto;
-                          text-align: right;
-                          font-family: 'Roboto', sans-serif;
-                          display: block;
-                        }
+
+#sf-widget-custom {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+  height: auto;
+  text-align: right;
+  display: block;
+}
 #sf-widget-custom p, #sf-widget-custom a, #sf-widget-custom button {
   font-family: 'Roboto', sans-serif;
 }
@@ -567,3 +553,122 @@ h1 {
   background-color: #f8d7da;
   border-color: #f5c6cb;
 }
+.sf-filter-actions-wrapper {
+  padding-left: auto;
+  width: 100%;
+  padding-right: 0;
+}
+.search-feedback-filters-wrapper-container[data-v-514b9647] {
+  display: inline-block;
+  min-width: 50%;
+  position: relative;
+}
+
+.search-feedback-filters-wrapper .edit-button {display: none;}
+
+/*remove excess margins from page title*/
+h1.page-title{
+  margin-bottom: 0;
+}
+
+/*style search icon, close button, and loading wheel*/
+span.search-close, span.search-icon{
+  filter: brightness(0.35) sepia(1) hue-rotate(-70deg) saturate(6);
+  max-width: 23px;
+  height: 23px;
+  width: 23px;
+}
+.btn.btn-default.search-close-button{
+  padding: 0;
+}
+
+/*dropdown styles for sort*/
+#sort-by{
+  background: url(/themes/custom/bridgewater/images/angle-down.png) no-repeat;
+  background-position: center right 20px;
+  background-size: 16px;
+  background-color: #fff;
+  border: 2px solid #ebebeb;
+  padding: 8px 11px;
+  font-size: 1.6rem;
+  height: 46px;
+  border-radius: 6px;
+}
+.list-group-item-searchstudio-js li .ml-1 {
+  color: #080808 !important;
+  opacity: 1 !important;
+}
+
+/*sidebar heading styles and hover*/
+h4.sidebar-heading a.text-uppercase {
+  text-transform: none !important;
+  text-decoration: none;
+  font-family: 'Roboto', Arial, Sans-Serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #89191f !important;
+}
+h4.sidebar-heading a.text-uppercase:hover {
+  color: #236192 !important;
+  opacity: 1 !important;
+}
+
+/*text box styles*/
+#searchTerm{
+  border: 2px solid #ebebeb;
+  padding: 10px 16px;
+  font-size: 1.6rem;
+  height: 46px;
+  border-radius: 6px;
+}
+
+/*remove em styles from card titles*/
+.card-searchstudio-js-title a em{
+  font-style: normal;
+  font-weight: bold;
+}
+
+/*fix padding of cards, remove box shadow and add border instead*/
+.card-searchstudio-js-custom{
+  border-bottom: 2px solid #ebebeb;
+  padding: 28px 0px;
+  box-shadow: none;
+}
+
+/*remove excess margins from cards*/
+.container .sf-lists.layout-list .list-wrapper{
+  margin-bottom: 0px;
+}
+
+
+/*hover action for cards*/
+.card-searchstudio-js-custom:hover{
+  background-color: none;
+}
+.card-searchstudio-js-custom:hover .card-searchstudio-js-title a{
+  color: #236192 !important;
+}
+
+/*hide previous and next links if they are disabled*/
+.rl-search .pagination-wrap .pagination .page-item .page-link-searchstudio-js[disabled="disabled"] {
+  display: none;
+}
+
+/*style pagination text to darker black*/
+.rl-search .pagination-wrap .pagination .page-item span.page-link-searchstudio-js {
+  color: #080808;
+}
+
+/*change pagination links to red*/
+.rl-search .pagination-wrap .pagination .page-item a.page-link-searchstudio-js {
+  padding: .5rem;
+  color: #89191f;
+  border: 0 !important;
+}
+
+/*pagination links hover style*/
+.rl-search .pagination-wrap .pagination .page-item a.page-link-searchstudio-js:hover {
+  text-decoration: underline;
+  color: #236192 !important;
+}
+
