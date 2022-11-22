@@ -392,6 +392,7 @@
                                      class="ml-1">
                                        <span class="facet-name"
                                              :ref="'elipsisTooltip'+i+index">
+                                             ({{ '{{ cleanValue(getFieldValue(facet.facet_name, row.label)) }}' }})
                                         </span>
                                 ({{ '{{ row.count }}' }})
                               </label>
