@@ -119,7 +119,6 @@
           <a class="stretched-link" v-if="url" :href="url" @click="navigate" v-html="title" />
           <span v-else v-html="title" />
         </div>
-        <span class="card-searchstudio-js-path" v-if="paths" v-html="paths" />
         <span class="star elevated" v-if="promoted"> </span>
         <div class="thumbnail" v-if="thumbnail"><span><img :src="thumbnail"></span></div>
 
@@ -139,6 +138,7 @@
               <span :class="valueClass(value)"
                     v-html="extractedValue(propertyName, value)"
                     v-else />
+              <span class="card-searchstudio-js-path" v-if="paths" v-html="paths" />
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@
   </div>
 </script>
 <script type="text/x-template" id="leave-feedback-template">
-  <div id="sf-widget-custom" class="sf-main">
+  <div id="sf-widget-custom" class="sf-main ">
     <a href="#" class="sf-open-feedback" @click.prevent="toggleFeedback" >
       [ - ] Search Feedback
     </a>
@@ -392,7 +392,7 @@
                                      class="ml-1">
                                        <span class="facet-name"
                                              :ref="'elipsisTooltip'+i+index">
-                                             ({{ '{{ cleanValue(getFieldValue(facet.facet_name, row.label)) }}' }})
+                                         ({{ '{{ cleanValue(getFieldValue(facet.facet_name, row.label)) }}' }})
                                         </span>
                                 ({{ '{{ row.count }}' }})
                               </label>
@@ -507,14 +507,14 @@
       authentication: 'YXBwODQ2LWFwaTpZWjdrdXRiN1NyOCU=',
       apikey: 'Bz6dzd0msALr75swi3vhBVnY3pupJH7l8wG15u7WQpo',
       session: session,
-      fields: {"date": "ds_last_changed", "title": "tm_X3b_en_title_aggregated", "url": "tm_X3b_en_url"},
+      fields: {"date": "ds_last_changed", "title": "tm_X3b_en_title_aggregated", "url": "tm_X3b_en_url", "paths": "tm_X3b_en_url"},
       suggester: 'https://ss897868-e1jk7346-us-east-1-aws.searchstax.com/solr/devfederated-846-suggester/emsuggest',
       relatedSearches: 'None',
       searchAPIKey: '31d0114d7af1a005bd50aabdb83203591d44bf67',
       language: 'en',
       fieldFormatters: {date: format_date, },
       searchAdditionalArgs: 'hl.fragsize=200',
-      hideUniqueKey: false},
+      hideUniqueKey: true},
     searchResults: '#searchResultsSection',
     searchInput: '#searchInput',
     searchResultSummarySection: '#searchResultSummarySection',
